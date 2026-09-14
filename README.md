@@ -10,16 +10,16 @@ name: Ashi Jain
 role: AI Engineer
 
 works_on:
-  agent_eval: trajectory-level scoring over rollouts
-  judges:     rubric calibration, position-bias control
-  rl:         reward design, verifiable rewards
-  data:       annotation QA, dedup, decontamination
+  - trajectory-level agent evaluation: scoring whole rollouts, not single turns
+  - LLM-as-judge harnesses: rubric calibration, position-bias control
+  - RL environments: reward design, verifiable rewards, rollout instrumentation
+  - human-in-the-loop curation: annotation QA, dedup, train/test decontamination
 
 principles:
-  - behaviour under autonomy is empirical, not a spec
+  - behaviour under autonomy is an empirical question, not a spec
   - an uncalibrated judge is an unmeasured model
-  - annotator disagreement is signal about the rubric
-  - an unreproducible benchmark is an anecdote
+  - annotator disagreement is signal about the rubric, not noise in the labels
+  - a benchmark without a reproducible harness is an anecdote
 ```
 
 ### Papers
